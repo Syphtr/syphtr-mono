@@ -4,7 +4,6 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "start:prod": "cd apps/server && pnpm run start:prod",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
