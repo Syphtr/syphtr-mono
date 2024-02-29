@@ -12,8 +12,8 @@ export default function Features() {
             Enterprise Software/SaaS:
           </p>
           <ul>
-            We are strategists, designers and developers. Innovators and problem
-            solvers. Small enough to be simple and quick.
+            The following are the areas we specialise in:
+            
             <li>- Data Quality</li>
             <li>- Data Preperation</li>
             <li>- Data Governance</li>
