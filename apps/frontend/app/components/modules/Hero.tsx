@@ -3,12 +3,11 @@ export default function Hero() {
     <section className="bg-white dark:bg-gradient-to-r from-emerald-500 to-emerald-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          Let Syphtr do the heavy lifting for you
+          Let Syphtr take care of your talent pipeline
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
           Syphtr is a true pay-as-you-go recruiting service utilising the most
-          advanced sourcing software available. Let us take care of you talent
-          pipeline so you can focus on making great hires
+          advanced sourcing software available. Let us do the heavy lifting so you can focus on making great hires
         </p>
         <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
