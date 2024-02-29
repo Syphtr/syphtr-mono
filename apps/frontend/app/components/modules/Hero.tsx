@@ -1,18 +1,18 @@
 export default function Hero() {
   return (
-    <section className="bg-white dark:bg-gradient-to-r from-emerald-500 to-emerald-900">
+    <section className="bg-green-500">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-          Let Syphtr take care of your talent pipeline
+        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-200 md:text-5xl lg:text-6xl">
+          Let us take care of your talent pipelines
         </h1>
-        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+        <p className="mb-8 text-lg font-bold text-white lg:text-xl sm:px-16 xl:px-48">
           Syphtr is a true pay-as-you-go recruiting service utilising the most
           advanced sourcing software available. Let us do the heavy lifting so you can focus on making great hires
         </p>
         <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
           <a
             href="/"
-            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            className="inline-flex justify-center items-center py-3 px-5 text-base font-bold text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
           >
             Get in touch
             <svg
