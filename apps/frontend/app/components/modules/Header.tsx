@@ -10,13 +10,16 @@ export default function Header() {
     <header onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
       <nav className={`bg-green-500 hover:bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-green-500 ${isHovered ? 'text-green-500' : 'text-white'}`}>
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <a href="https://flowbite.com" className="flex items-center">
-            <img
-              src={isHovered ? "/logos/Black logo - no background.png" : "/logos/White logo - no background.png"}
-              className="mr-3 h-6 sm:h-9"
-              alt="Logo"
-            />
-          </a>
+          <div className="flex items-center">
+            <a href="https://flowbite.com" className="flex items-center">
+              <img
+                src={isHovered ? "/logos/Black logo - no background.png" : "/logos/White logo - no background.png"}
+                className="mr-3 h-6 sm:h-9"
+                alt="Logo"
+              />
+            </a>
+            {/* New link */}
+            <a href="http://www.syphtr.com" className={`font-bold mr-2 ${isHovered ? 'text-green-500' : 'text-white'}`}>Log into Syphtr Search</a>          </div>
           <div className="flex items-center lg:order-2">
             <div className="relative">
               <button onClick={() => setUseCasesOpen(!useCasesOpen)} className={`font-bold text-sm mr-2 focus:outline-none ${isHovered ? 'text-green-500' : 'text-white'}`}>

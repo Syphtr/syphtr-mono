@@ -12,12 +12,12 @@ export default function Pricing() {
         </div>
         <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 className="mb-4 text-2xl font-semibold">Membership fee</h3>
+            <h3 className="mb-4 text-2xl font-semibold">Company/Team Membership fee</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              With one free Talent Pipeline included for 12 months!
+              Up to 5 users - With one free Talent Pipeline included for 12 months!
             </p>
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">£249</span>
+              <span className="mr-2 text-5xl font-extrabold">£499</span>
               <span className="text-gray-500 dark:text-gray-400">/month</span>
             </div>
 
@@ -66,7 +66,7 @@ export default function Pricing() {
                   ></path>
                 </svg>
                 <span>
-                  Pricing is per user
+                  Access to Syphtr's Talent Pool SaaS
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -84,7 +84,7 @@ export default function Pricing() {
                 </svg>
                 <span>
                   Included:{" "}
-                  <span className="font-semibold">12 month Talent Pipeline</span>
+                  <span className="font-semibold">One 12 month Talent Pipeline</span>
                 </span>
               </li>
               <li className="flex items-center space-x-3">
@@ -104,6 +104,23 @@ export default function Pricing() {
                   Max users: <span className="font-semibold">5/Membership</span>
                 </span>
               </li>
+              <li className="flex items-center space-x-3">
+  <svg
+    className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fillRule="evenodd"
+      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+      clipRule="evenodd"
+    ></path>
+  </svg>
+  <span>
+    Only <span className="font-semibold">£249/month for small teams (3 users max) </span>
+  </span>
+</li>
             </ul>
             <a
               href="/"
@@ -114,13 +131,13 @@ export default function Pricing() {
           </div>
 
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 className="mb-4 text-2xl font-semibold">Talent Pipeline</h3>
+            <h3 className="mb-4 text-2xl font-semibold">Talent Pipeline (Membership required)</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              Guratneed to meet quantifiable and agreed upon criteria - allow us to build your talent pool for you.
+              Guaranteed to meet quantifiable and agreed upon criteria - allow us to build your talent pool for you.
                           </p>
             <div className="flex justify-center items-baseline my-8">
-              <span className="mr-2 text-5xl font-extrabold">£149</span>
-              <span className="text-gray-500 dark:text-gray-400">/month</span>
+              <span className="mr-2 text-5xl font-extrabold">£249</span>
+              <span className="text-gray-500 dark:text-gray-400">/pipeline/month</span>
             </div>
 
             <ul className="mb-8 space-y-4 text-left">
@@ -137,7 +154,7 @@ export default function Pricing() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span>50 profiles sent directly to your pipeline app (see below) weekly</span>
+                <span>50 profiles sent weekly - directly to your specified email inbox or to your Syphtr pipeline app (see below)</span>
               </li>
               <li className="flex items-center space-x-3">
                 <svg
@@ -186,7 +203,7 @@ export default function Pricing() {
                   ></path>
                 </svg>
                 <span>
-                  Or pay £199/month for:{" "}
+                  Or pay £349/month for:{" "}
                   <span className="font-semibold">3 month subscription</span>
                 </span>
               </li>
@@ -217,14 +234,15 @@ export default function Pricing() {
           </div>
 
           <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-            <h3 className="mb-4 text-2xl font-semibold">Full Recruiting Services</h3>
+            <h3 className="mb-4 text-2xl font-semibold">Full Recruiting Services (No membership required - Members recieve 20% off all full recruiting fees)</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               Manageable and transparent pricing that reflect the success of your hire. 
             </p>
             <div className="flex justify-center items-baseline my-8">
-  <span className="mr-2 text-5xl font-extrabold">£199</span>
-  <span className="text-gray-500 dark:text-gray-400">/screened and introduced candidate + plus relevant hiring fees (see below)</span>
-</div>
+    <span className="mr-1 text-md font-extrabold">From</span>
+    <span className="mr-2 text-5xl font-extrabold">£199</span>
+    <span className="text-gray-500 dark:text-gray-400">/fully screened and introduced candidate + plus relevant hiring fees (see below)</span>
+  </div>
 
             <ul className="mb-8 space-y-4 text-left">
               <li className="flex items-center space-x-3">
