@@ -1,10 +1,14 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 export default {
-  content: ['./app/**/*.{js,jsx,ts,tsx}'],
+  content: ["./app/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/abstract.jpg')",
+        "hero-pattern-alternative": "url('/alternative.jpg')",
+      },
+    },
   },
   plugins: [],
-} satisfies Config
-
+} satisfies Config;
