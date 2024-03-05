@@ -1,6 +1,8 @@
 import { Link } from "@remix-run/react";
 import useScrollBackground from "~/utils/useScrollBackground";
 
+import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/remix";
+
 export default function Header() {
   const showBackground = useScrollBackground();
 
@@ -18,19 +20,24 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="flex-none ">
-          <Link
-            to="/dashboard"
-            className={`btn btn-outline btn-white text-green-500 hover:bg-white border-none hidden md:flex`}
-          >
-            Login
-          </Link>
-          <Link
-            to="/dashboard"
-            className={`btn bg-green-500  text-black border-none hidden md:flex`}
-          >
-            Dashboard
-          </Link>
+
+        <div className="flex-none gap-4">
+          <SignedOut>
+            <SignInButton>
+              <button className="btn">Login</button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
+          <SignedIn>
+            <Link
+              to="/dashboard"
+              className={`btn bg-green-500  text-black border-none hidden md:flex`}
+            >
+              Dashboard
+            </Link>
+          </SignedIn>
 
           <button className="btn btn-square btn-ghost text-black md:hidden">
             <svg
@@ -51,12 +58,4 @@ export default function Header() {
       </nav>
     </header>
   );
-}
-
-{
-  /* <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
-  <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-    Teal to Lime
-  </span>
-</button>; */
 }

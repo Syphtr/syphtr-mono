@@ -1,4 +1,9 @@
-import type { LinksFunction } from "@remix-run/node";
+import type {
+  LinksFunction,
+  MetaFunction,
+  LoaderFunction,
+} from "@remix-run/node";
+
 import {
   Links,
   LiveReload,
@@ -8,18 +13,32 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import { rootAuthLoader } from "@clerk/remix/ssr.server";
+
+import { ClerkApp, ClerkErrorBoundary } from "@clerk/remix";
+
 import stylesheet from "./styles/tailwind.css";
+
+export const meta: MetaFunction = () => [
+  {
+    charset: "utf-8",
+    title: "Syphtr.io",
+    viewport: "width=device-width,initial-scale=1",
+  },
+];
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export default function App() {
+export const loader: LoaderFunction = (args) => rootAuthLoader(args);
+
+export const ErrorBoundary = ClerkErrorBoundary();
+
+function App() {
   return (
     <html lang="en">
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
@@ -32,3 +51,5 @@ export default function App() {
     </html>
   );
 }
+
+export default ClerkApp(App);
