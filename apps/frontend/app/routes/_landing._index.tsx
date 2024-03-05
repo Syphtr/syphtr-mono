@@ -1,10 +1,10 @@
 import type { MetaFunction } from "@remix-run/node";
 
 // components
-import Hero from "~/components/modules/Hero";
-import Features from "~/components/modules/Features";
-import Pricing from "~/components/modules/Pricing";
-import SubscriptionBanner from "~/components/modules/SubscriptionBanner";
+import Hero from "~/components/sections/Hero";
+import Features from "~/components/sections/Features";
+import Pricing from "~/components/sections/Pricing";
+import SubscriptionBanner from "~/components/sections/SubscriptionBanner";
 
 export const meta: MetaFunction = () => {
   return [
