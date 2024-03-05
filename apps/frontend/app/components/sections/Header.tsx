@@ -28,6 +28,9 @@ export default function Header() {
             </SignInButton>
           </SignedOut>
           <SignedIn>
+            <UserButton />
+          </SignedIn>
+          <SignedIn>
             <Link
               to="/dashboard"
               className={`btn bg-green-500  text-black border-none hidden md:flex`}
@@ -35,9 +38,7 @@ export default function Header() {
               Dashboard
             </Link>
           </SignedIn>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
+
           <button className="btn btn-square btn-ghost text-black md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
