@@ -1,10 +1,15 @@
 import { Link } from "@remix-run/react";
+import useScrollBackground from "~/utils/useScrollBackground";
 
 export default function Header() {
+  const showBackground = useScrollBackground();
+
   return (
-    <header className="fixed top-0 w-full">
-      <nav className="navbar bg-green-500">
-        <div className="flex-1">
+    <header
+      className={`transition-colors ease-in-out delay-250  fixed top-0 w-full ${showBackground ? "bg-white" : "bg-transparent"}  `}
+    >
+      <nav className="navbar  max-w-screen-xl mx-auto">
+        <div className="flex-1 ">
           <Link to="/" className="flex items-center">
             <img
               src={"/logos/Black logo - no background.png"}
@@ -13,8 +18,21 @@ export default function Header() {
             />
           </Link>
         </div>
-        <div className="flex-none">
-          <button className="btn btn-square btn-ghost text-black">
+        <div className="flex-none ">
+          <Link
+            to="/dashboard"
+            className={`btn btn-outline btn-white text-green-500 hover:bg-white border-none hidden md:flex`}
+          >
+            Login
+          </Link>
+          <Link
+            to="/dashboard"
+            className={`btn bg-green-500  text-black border-none hidden md:flex`}
+          >
+            Dashboard
+          </Link>
+
+          <button className="btn btn-square btn-ghost text-black md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -2,14 +2,14 @@ import { Link } from "@remix-run/react";
 
 export default function Hero() {
   return (
-    <section className="bg-green-500 py-32 bg-hero-pattern-alternative bg-no-repeat bg-cover">
+    <section className="bg-green-500 py-32 lg:py-0 bg-hero-pattern-alternative bg-no-repeat bg-cover">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-center sm:text-left">
+          <h1 className="text-gray-900 max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-center sm:text-left">
             Let <span className=" text-green-500">Syphtr</span> take care of
             your talent pipelines
           </h1>
-          <p className="max-w-2xl mb-11 font-light text-2xl text-black text-center sm:text-left m-auto">
+          <p className="max-w-2xl mb-11 font-light md:text-lg text-gray-900 text-center sm:text-left m-auto">
             Syphtr is a true pay-as-you-go recruiting service for hiring your
             GTM/Revenue Generating teams - Utilising the most advanced sourcing
             software available
