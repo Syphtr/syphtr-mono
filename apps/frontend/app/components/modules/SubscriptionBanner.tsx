@@ -1,17 +1,11 @@
 export default function SubscriptionBanner() {
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-green-500">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-md sm:text-center">
-          <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
-            Syphtr Search SaaS coming soon
+          <h2 className="mb-8 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl ">
+            Coming soon: Syphtr Search
           </h2>
-          <p className="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
-            Uncover highly qualified sales candidates with your industry
-            experience. Nuanced, proprietary market data and custom logic help
-            us to zone-in on the people that really know your competitive
-            market.
-          </p>
           <form action="#">
             <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
               <div className="relative w-full">
@@ -49,7 +43,7 @@ export default function SubscriptionBanner() {
               </div>
             </div>
             <div className="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">
-              We care about the protection of your data.{" "}
+              We care about the protection of your data.
               <a
                 href="/"
                 className="font-medium text-primary-600 dark:text-primary-500 hover:underline"
