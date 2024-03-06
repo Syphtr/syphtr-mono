@@ -87,9 +87,9 @@ export default function DashboardRoute() {
             </p>
           </>
         </aside>
-        <main>
+        <div>
           <Outlet />
-        </main>
+        </div>
       </div>
     </main>
   );
